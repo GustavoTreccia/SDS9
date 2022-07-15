@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_sales")
-public class Sales{
+public class Sale{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,17 +21,7 @@ public class Sales{
 	private Double amount;
 	private LocalDate date;
 	
-	public Sales() {}
-	
-
-	public Sales(Long id, String sellerName, Integer visited, Integer deals, Double amount, LocalDate date) {
-		this.id = id;
-		this.sellerName = sellerName;
-		this.visited = visited;
-		this.deals = deals;
-		this.amount = amount;
-		this.date = date;
-	}
+	public Sale() {}
 
 
 	public Long getId() {
@@ -100,7 +90,7 @@ public class Sales{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Sales other = (Sales) obj;
+		Sale other = (Sale) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
