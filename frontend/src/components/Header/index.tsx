@@ -10,7 +10,7 @@ function Header() {
                     <h1>DSMeta</h1>
                     <p>
                         Desenvolvido por
-                        <a href="https://github.com/GustavoTreccia">Gustavo Treccia Guirado</a>
+                        <a href="https://github.com/GustavoTreccia"> Gustavo Treccia Guirado</a>
                     </p>
                 </div>
             </header>
